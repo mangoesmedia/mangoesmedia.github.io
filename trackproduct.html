@@ -1,45 +1,975 @@
-<div class="container px-1 px-md-4 py-5 mx-auto">
-    <div class="card">
-        <div class="row d-flex justify-content-between px-3 top">
-            <div class="d-flex">
-                <h5>ORDER <span class="text-primary font-weight-bold">#Y34XDHR</span></h5>
-            </div>
-            <div class="d-flex flex-column text-sm-right">
-                <p class="mb-0">Expected Arrival <span>19/01/19</span></p>
-                <p>USPS <span class="font-weight-bold">234094567242423422898</span></p>
-            </div>
-        </div> <!-- Add class 'active' to progress -->
-        <div class="row d-flex justify-content-center">
-            <div class="col-12">
-                <ul id="progressbar" class="text-center">
-                    <li class="active step0"></li>
-                    <li class="active step0"></li>
-                    <li class="active step0"></li>
-                    <li class=" step0"></li>
-                </ul>
-            </div>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pro Online editor</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://bbbootstrap.com/assets/css/onlineeditorstyles.css?v=20.2">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://bbbootstrap.com/assets/css/choices.min.css">
+  <script src="https://bbbootstrap.com/assets/js/choices.min.js" type="6b143584a92f4207eda162d0-text/javascript"></script>
+
+
+
+  <link rel="shortcut icon" href="https://i.imgur.com/msO7f5I.png">
+         
+          
+                   <!-- AdinPlay Ads -->
+<script type="6b143584a92f4207eda162d0-text/javascript">
+var aiptag = aiptag || {};
+aiptag.cmd = aiptag.cmd || [];
+aiptag.cmd.display = aiptag.cmd.display || [];
+aiptag.cmd.player = aiptag.cmd.player || [];
+
+//CMP tool settings
+aiptag.cmp = {
+	show: true,
+	position: "centered",  //centered or bottom
+	button: true,
+	buttonText: "Privacy settings",
+	buttonPosition: "bottom-left" //bottom-left, bottom-right, top-left, top-right
+}
+</script>
+<script async src="//api.adinplay.com/libs/aiptag/pub/BBB/bbbootstrap.com/tag.min.js" type="6b143584a92f4207eda162d0-text/javascript"></script>
+
+
+<!-- Google Analytics -->
+<script type="6b143584a92f4207eda162d0-text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-148526987-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+    
+        
+        <style>
+          .top_navbar .menu {
+    width: calc(100% - 198px);
+    padding: 0 4px;
+    display: flex;
+    justify-content: flex-end !important;
+    align-items: center;
+}
+
+.top_navbar .logo{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+  height: 33px;
+    margin-top: 8px;
+    width: 1px;
+    background-color: #fff;
+    margin-left: 17px;
+    display: flex;
+}
+
+.create-new{
+  color: #fff;
+    width: 104px;
+    font-size: 16px;
+    
+}
+
+.create-new:hover{
+  text-decoration:none;
+  color:#f7e4e4;
+}
+
+
+        </style>
+
+        
+                   <!-- AdinPlay Ads -->
+<script type="6b143584a92f4207eda162d0-text/javascript">
+var aiptag = aiptag || {};
+aiptag.cmd = aiptag.cmd || [];
+aiptag.cmd.display = aiptag.cmd.display || [];
+aiptag.cmd.player = aiptag.cmd.player || [];
+
+//CMP tool settings
+aiptag.cmp = {
+	show: true,
+	position: "centered",  //centered or bottom
+	button: true,
+	buttonText: "Privacy settings",
+	buttonPosition: "bottom-left" //bottom-left, bottom-right, top-left, top-right
+}
+</script>
+<script async src="//api.adinplay.com/libs/aiptag/pub/BBB/bbbootstrap.com/tag.min.js" type="6b143584a92f4207eda162d0-text/javascript"></script>
+
+
+<!-- Google Analytics -->
+<script type="6b143584a92f4207eda162d0-text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-148526987-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+        </head>
+<body>
+	<meta name="csrf-token" content="tS29Mb2eh2wA44mI7poSrhsqfgKkAeExkCBXSgSj">
+  <form action="#" method="post" data-persist="garlic" id="form_snippets_form">
+    <input type="hidden" name="_token" value="tS29Mb2eh2wA44mI7poSrhsqfgKkAeExkCBXSgSj"><div class="wrapper hover_collapse">
+	<div class="top_navbar">
+		<div class="logo">
+      
+      <a href="/">
+        <img src="https://bbbootstrap.com/assets/images/logo4.png" width="130">
+      </a>
+      <span class="line"></span>
+		</div>
+
+    <a class="create-new" href="/tools/proonlineeditor">Create New</a>
+		<div class="menu">
+			<div class="hamburger">
+      </div>
+       
+      
+      <a  class="text-white mr-3 text-decoration-none" id="saveonlinesnippet"></a>
+			<div class="profile_wrap">
+
+        <a href="/users/mangoes-media-vlog-32215/dashboard">
+				<div class="profile">
+					<img class="rounded-circle" width="90" src="https://lh3.googleusercontent.com/a-/AOh14Gge1WTAughHW7bLFcZ4JR-u-n3oJWNQufdhh6udFg=s96-c" alt="profile_pic">
+					<span class="name">MANGOES MEDIA VLOG</span>
+					<span class="icon">
+						<i class="fa fa-angle-down"></i>
+					</span>
         </div>
-        <div class="row justify-content-between top">
-            <div class="row d-flex icon-content"> <img class="icon" src="https://i.imgur.com/9nnc9Et.png">
-                <div class="d-flex flex-column">
-                    <p class="font-weight-bold">Order<br>Processed</p>
-                </div>
-            </div>
-            <div class="row d-flex icon-content"> <img class="icon" src="https://i.imgur.com/u1AzR7w.png">
-                <div class="d-flex flex-column">
-                    <p class="font-weight-bold">Order<br>Shipped</p>
-                </div>
-            </div>
-            <div class="row d-flex icon-content"> <img class="icon" src="https://i.imgur.com/TkPm63y.png">
-                <div class="d-flex flex-column">
-                    <p class="font-weight-bold">Order<br>En Route</p>
-                </div>
-            </div>
-            <div class="row d-flex icon-content"> <img class="icon" src="https://i.imgur.com/HdsziHP.png">
-                <div class="d-flex flex-column">
-                    <p class="font-weight-bold">Order<br>Arrived</p>
-                </div>
-            </div>
+      </a>
+        
+      </div>
+      
+
+		</div>
+	</div>
+
+	<div class="sidebar">
+		<div class="sidebar_inner">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item items-center" role="presentation">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">HTML</a>
+        </li>
+        <li class="nav-item items-center" role="presentation">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">CSS</a>
+        </li>
+        <li class="nav-item items-center" role="presentation">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><span>JS</span>
+                        <span class="babeljs d-none">Babel</span>
+                        
+          
+          </a>
+        </li>
+
+        <li class="nav-item items-center" role="presentation">
+
+          <a class="nav-link" data-toggle="modal" data-target="#staticBackdrop" style="cursor: pointer;">Settings</a>
+        
+        </li>
+
+       
+        
+    
+      </ul>   
+		</div>
+  </div>
+
+
+  <!--Modal start-->
+
+   
+    <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Change Library</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <div class="modal-body">
+
+            
+           
+            <div class="mb-2" id="bootstrap-container">
+               
+                <select id="bootstrap_version" class="wide select-items">
+                                            <option value="14" mytag="5.1.3" is_react="0" myjs_1="" myjs_2="" myjs="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" js_required="0" mycss="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" autocomplete_url="https://raw.githubusercontent.com/bbbootstrap/libraries/main/pro-editor-lib/bootstrap5.txt" version_name="Bootstrap 5">Bootstrap 5 - 5.1.3</option>
+                                            <option value="12" mytag="5.0.1" is_react="0" myjs_1="" myjs_2="" myjs="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" js_required="1" mycss="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" autocomplete_url="https://raw.githubusercontent.com/bbbootstrap/libraries/main/pro-editor-lib/bootstrap5.txt" version_name="Bootstrap 5">Bootstrap 5 - 5.0.1</option>
+                                            <option value="10" mytag="5.0.0 Beta" is_react="0" myjs_1="" myjs_2="" myjs="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" js_required="0" mycss="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" autocomplete_url="https://raw.githubusercontent.com/bbbootstrap/libraries/main/pro-editor-lib/bootstrap5.txt" version_name="Bootstrap 5">Bootstrap 5 - 5.0.0 Beta</option>
+                                            <option value="8" mytag="5.0.0" is_react="0" myjs_1="" myjs_2="" myjs="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js" js_required="1" mycss="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" autocomplete_url="https://raw.githubusercontent.com/bbbootstrap/libraries/main/pro-editor-lib/bootstrap5.txt" version_name="Bootstrap 5">Bootstrap 5 - 5.0.0</option>
+                                            <option value="7" mytag="4.4.1" is_react="0" myjs_1="" myjs_2="" myjs="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" js_required="1" mycss="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" autocomplete_url="https://raw.githubusercontent.com/asksnbb/bootstraplibraries/main/bootstrap5.txt" version_name="Bootstrap 4">Bootstrap 4 - 4.4.1</option>
+                                            <option value="5" mytag="4.3.1" is_react="0" myjs_1="" myjs_2="" myjs="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" js_required="1" mycss="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" autocomplete_url="" version_name="Bootstrap 4">Bootstrap 4 - 4.3.1</option>
+                                            <option value="3" mytag="4.1.1" is_react="0" myjs_1="" myjs_2="" myjs="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" js_required="1" mycss="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" autocomplete_url="" version_name="Bootstrap 4">Bootstrap 4 - 4.1.1</option>
+                                            <option value="1" mytag="4.0.0" is_react="0" myjs_1="" myjs_2="" myjs="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" js_required="1" mycss="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" autocomplete_url="" version_name="Bootstrap 4">Bootstrap 4 - 4.0.0</option>
+                                            <option value="2" mytag="3.3.0" is_react="0" myjs_1="" myjs_2="" myjs="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js" js_required="1" mycss="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" autocomplete_url="" version_name="Bootstrap 3">Bootstrap 3 - 3.3.0</option>
+                                            <option value="16" mytag="3.0.1" is_react="0" myjs_1="" myjs_2="" myjs="https://cdn.tailwindcss.com/3.0.12" js_required="0" mycss="https://cdn.tailwindcss.com/3.0.12" autocomplete_url="https://raw.githubusercontent.com/asksnbb/bootstraplibraries/main/tailwind-1.9.txt" version_name="Tailwind CSS">Tailwind CSS - 3.0.1</option>
+                                            <option value="4" mytag="3.0.0" is_react="0" myjs_1="" myjs_2="" myjs="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" js_required="1" mycss="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" autocomplete_url="" version_name="Bootstrap 3">Bootstrap 3 - 3.0.0</option>
+                                            <option value="11" mytag="2.6.12" is_react="0" myjs_1="" myjs_2="" myjs="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js" js_required="0" mycss="https://cdn.jsdelivr.net/gh/asksnbb/libraries@main/blnk.css" autocomplete_url="" version_name="Vue JS">Vue JS - 2.6.12</option>
+                                            <option value="15" mytag="2.2.16" is_react="0" myjs_1="" myjs_2="" myjs="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" js_required="0" mycss="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" autocomplete_url="https://raw.githubusercontent.com/asksnbb/bootstraplibraries/main/tailwind-1.9.txt" version_name="Tailwind CSS">Tailwind CSS - 2.2.16</option>
+                                            <option value="9" mytag="2.1.0" is_react="0" myjs_1="" myjs_2="" myjs="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" js_required="0" mycss="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" autocomplete_url="https://raw.githubusercontent.com/bbbootstrap/libraries/main/pro-editor-lib/tailwind-1.9.txt" version_name="Tailwind css">Tailwind css - 2.1.0</option>
+                                            <option value="13" mytag="17" is_react="1" myjs_1="https://unpkg.com/react-dom/umd/react-dom.development.js" myjs_2="https://unpkg.com/@babel/standalone/babel.min.js" myjs="https://unpkg.com/react/umd/react.development.js" js_required="0" mycss="" autocomplete_url="" version_name="ReactJS">ReactJS - 17</option>
+                                      </select>
+            </div>
+
+            
+                <div id="jquery-container" class="mb-2 display-none">
+                    <br> <br>
+                    <select class="wide select-items" id="js_version">
+                                                                                                <option value="1"  myjslink="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" mytag="3.2.1">jQuery 3.2.1</option>
+                                                                                                                                            <option value="4"  myjslink="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js" mytag="2.6.12">Vue JS - 2.6.12</option>
+                                                                                                                                            <option value="2"  myjslink="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" mytag="2.2.4">jQuery 2.2.4</option>
+                                                                                                                                            <option value="3"  myjslink="" mytag="">No Jquery</option>
+                                                                                          </select>
+                </div>
+
+            
+
+                <br><br>
+            <div class="mb-2" id="font-container">
+                <select class="wide select-items" id="snippet_fonts">
+                                            <option value="1" mytag="">No Fonts </option>
+                                            <option value="8" mytag="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">Bootstrap Icons 1.4.0</option>
+                                            <option value="10" mytag="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">Bootstrap Icons 1.7</option>
+                                            <option value="7" mytag="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">Box Icons 2.0.7</option>
+                                            <option value="9" mytag="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">Unicons 2.1.9 2.1.9</option>
+                                            <option value="5" mytag="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.6.95/css/materialdesignicons.css">Material Design 3.6.95</option>
+                                            <option value="2" mytag="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">Font Awesome 4.0.3</option>
+                                            <option value="6" mytag="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">Font Awesome 4.7.0</option>
+                                            <option value="3" mytag="https://use.fontawesome.com/releases/v5.7.2/css/all.css">Font Awesome 5.7.2</option>
+                                            <option value="4" mytag="https://use.fontawesome.com/releases/v5.8.1/css/all.css">Font Awesome 5.8.1</option>
+                                      </select>
+            </div>
+
+            <div class="mt-5">
+              <form>
+                <div class="form-group">
+                  <label class="fs-6" for="formControlRange" style="font-size: 12px;margin-left: 2px;margin-top: 5px;">Change Editor Font Size - <span class="sizenumber">15</span></label>
+                  <input type="range" class="form-control-range" min="15" max="50" onchange="if (!window.__cfRLUnblockHandlers) return false; updateTextInput(this.value);" id="formControlRange" data-cf-modified-6b143584a92f4207eda162d0-="">
+                  <input type="hidden" id="sizeinput" value="15">  
+                </div>
+              </form>
+            </div>
+          
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+        </div>
+      </div>
     </div>
+  </div>
+
+
+  <!--Modal End-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Modal POst snippet start-->
+
+   
+    <!-- Modal -->
+    <div class="modal fade" id="postsnippet" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="post-header-title">Save this snippet privately</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" >
+
+            <div id="post_body">
+              <input type="text" id="name_snippet" name="snippet_title" class="form-control snippet_name" value="Order tracking progressbar with icons" placeholder="Name of the snippet">
+              
+            
+          </div>
+            
+              
+          </div>
+
+            
+          <div class="modal-footer d-flex justify-content-end align-items-center" id="post_footer">
+
+            <div class="d-flex flex-column">
+              <div class="text-right mb-2">
+                <span id="error" class="text-danger"></span>
+              </div>
+              <div>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button id="post_snippet" type="button" class="btn btn-secondary" data-dismiss="modal">Save Now</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <!--Modal End-->
+
+
+	<div class="main_container">
+
+		<div id="shield"></div>
+	<a href="javascript:void(0)" id="dragbar"></a>
+	<div id="container">
+	  <div id="textareacontainer">
+	    <div id="textarea">
+	      <div id="textareawrapper">
+	         
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+             
+                <div id="htmlEditor">// your html goes here</div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div id="cssEditor" class="garlic-auto-save"> /* your CSS goes here*/</div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div id="jsEditor">//your javascript goes here</div>
+            </div>
+        <input type="hidden" value="&lt;div class=&quot;container px-1 px-md-4 py-5 mx-auto&quot;&gt; &lt;div class=&quot;card&quot;&gt; &lt;div class=&quot;row d-flex justify-content-between px-3 top&quot;&gt; &lt;div class=&quot;d-flex&quot;&gt; &lt;h5&gt;ORDER &lt;span class=&quot;text-primary font-weight-bold&quot;&gt;#Y34XDHR&lt;/span&gt;&lt;/h5&gt; &lt;/div&gt; &lt;div class=&quot;d-flex flex-column text-sm-right&quot;&gt; &lt;p class=&quot;mb-0&quot;&gt;Expected Arrival &lt;span&gt;19/01/19&lt;/span&gt;&lt;/p&gt; &lt;p&gt;USPS &lt;span class=&quot;font-weight-bold&quot;&gt;234094567242423422898&lt;/span&gt;&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- Add class 'active' to progress --&gt; &lt;div class=&quot;row d-flex justify-content-center&quot;&gt; &lt;div class=&quot;col-12&quot;&gt; &lt;ul id=&quot;progressbar&quot; class=&quot;text-center&quot;&gt; &lt;li class=&quot;active step0&quot;&gt;&lt;/li&gt; &lt;li class=&quot;active step0&quot;&gt;&lt;/li&gt; &lt;li class=&quot;active step0&quot;&gt;&lt;/li&gt; &lt;li class=&quot;astep0&quot;&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row justify-content-between top&quot;&gt; &lt;div class=&quot;row d-flex icon-content&quot;&gt; &lt;img class=&quot;icon&quot; src=&quot;https://i.imgur.com/9nnc9Et.png&quot;&gt; &lt;div class=&quot;d-flex flex-column&quot;&gt; &lt;p class=&quot;font-weight-bold&quot;&gt;Order&lt;br&gt;Processed&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row d-flex icon-content&quot;&gt; &lt;img class=&quot;icon&quot; src=&quot;https://i.imgur.com/u1AzR7w.png&quot;&gt; &lt;div class=&quot;d-flex flex-column&quot;&gt; &lt;p class=&quot;font-weight-bold&quot;&gt;Order&lt;br&gt;Shipped&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row d-flex icon-content&quot;&gt; &lt;img class=&quot;icon&quot; src=&quot;https://i.imgur.com/TkPm63y.png&quot;&gt; &lt;div class=&quot;d-flex flex-column&quot;&gt; &lt;p class=&quot;font-weight-bold&quot;&gt;Order&lt;br&gt;En Route&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;row d-flex icon-content&quot;&gt; &lt;img class=&quot;icon&quot; src=&quot;https://i.imgur.com/HdsziHP.png&quot;&gt; &lt;div class=&quot;d-flex flex-column&quot;&gt; &lt;p class=&quot;font-weight-bold&quot;&gt;Order&lt;br&gt;Arrived&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
+&lt;/div&gt;" id="htmleditorvalue" /> 
+        <input type="hidden" value="body{color: #000;overflow-x: hidden;height: 100%;background-color: #8C9EFF;background-repeat: no-repeat}.card{z-index: 0;background-color: #ECEFF1;padding-bottom: 20px;margin-top: 90px;margin-bottom: 90px;border-radius: 10px}.top{padding-top: 40px;padding-left: 13% !important;padding-right: 13% !important}#progressbar{margin-bottom: 30px;overflow: hidden;color: #455A64;padding-left: 0px;margin-top: 30px}#progressbar li{list-style-type: none;font-size: 13px;width: 25%;float: left;position: relative;font-weight: 400}#progressbar .step0:before{font-family: FontAwesome;content: &amp;amp;quot;\f10c&amp;amp;quot;;color: #fff}#progressbar li:before{width: 40px;height: 40px;line-height: 45px;display: block;font-size: 20px;background: #C5CAE9;border-radius: 50%;margin: auto;padding: 0px}#progressbar li:after{content: '';width: 100%;height: 12px;background: #C5CAE9;position: absolute;left: 0;top: 16px;z-index: -1}#progressbar li:last-child:after{border-top-right-radius: 10px;border-bottom-right-radius: 10px;position: absolute;left: -50%}#progressbar li:nth-child(2):after, #progressbar li:nth-child(3):after{left: -50%}#progressbar li:first-child:after{border-top-left-radius: 10px;border-bottom-left-radius: 10px;position: absolute;left: 50%}#progressbar li:last-child:after{border-top-right-radius: 10px;border-bottom-right-radius: 10px}#progressbar li:first-child:after{border-top-left-radius: 10px;border-bottom-left-radius: 10px}#progressbar li.active:before, #progressbar li.active:after{background: #651FFF}#progressbar li.active:before{font-family: FontAwesome;content: &amp;amp;quot;\f00c&amp;amp;quot}.icon{width: 60px;height: 60px;margin-right: 15px}.icon-content{padding-bottom: 20px}@media screen and (max-width: 992px){.icon-content{width: 50%}}" id="csseditorvalue" />
+        <input type="hidden" value="" id="jseditorvalue" />
+        <input type="hidden" id="pro_url_slug" name="pro_url_slug" value="order-tracking-progressbar-icons-22484204">
+        <input type="hidden" id="cs_htmlEditor" name="cs_htmlEditor" value="&amp;lt;div class=&amp;quot;container px-1 px-md-4 py-5 mx-auto&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;card&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;row d-flex justify-content-between px-3 top&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;d-flex&amp;quot;&amp;gt; &amp;lt;h5&amp;gt;ORDER &amp;lt;span class=&amp;quot;text-primary font-weight-bold&amp;quot;&amp;gt;#Y34XDHR&amp;lt;/span&amp;gt;&amp;lt;/h5&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;d-flex flex-column text-sm-right&amp;quot;&amp;gt; &amp;lt;p class=&amp;quot;mb-0&amp;quot;&amp;gt;Expected Arrival &amp;lt;span&amp;gt;19/01/19&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;USPS &amp;lt;span class=&amp;quot;font-weight-bold&amp;quot;&amp;gt;234094567242423422898&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;!-- Add class &#039;active&#039; to progress --&amp;gt; &amp;lt;div class=&amp;quot;row d-flex justify-content-center&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;col-12&amp;quot;&amp;gt; &amp;lt;ul id=&amp;quot;progressbar&amp;quot; class=&amp;quot;text-center&amp;quot;&amp;gt; &amp;lt;li class=&amp;quot;active step0&amp;quot;&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;active step0&amp;quot;&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;active step0&amp;quot;&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;li class=&amp;quot;astep0&amp;quot;&amp;gt;&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;row justify-content-between top&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;row d-flex icon-content&amp;quot;&amp;gt; &amp;lt;img class=&amp;quot;icon&amp;quot; src=&amp;quot;https://i.imgur.com/9nnc9Et.png&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;d-flex flex-column&amp;quot;&amp;gt; &amp;lt;p class=&amp;quot;font-weight-bold&amp;quot;&amp;gt;Order&amp;lt;br&amp;gt;Processed&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;row d-flex icon-content&amp;quot;&amp;gt; &amp;lt;img class=&amp;quot;icon&amp;quot; src=&amp;quot;https://i.imgur.com/u1AzR7w.png&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;d-flex flex-column&amp;quot;&amp;gt; &amp;lt;p class=&amp;quot;font-weight-bold&amp;quot;&amp;gt;Order&amp;lt;br&amp;gt;Shipped&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;row d-flex icon-content&amp;quot;&amp;gt; &amp;lt;img class=&amp;quot;icon&amp;quot; src=&amp;quot;https://i.imgur.com/TkPm63y.png&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;d-flex flex-column&amp;quot;&amp;gt; &amp;lt;p class=&amp;quot;font-weight-bold&amp;quot;&amp;gt;Order&amp;lt;br&amp;gt;En Route&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;row d-flex icon-content&amp;quot;&amp;gt; &amp;lt;img class=&amp;quot;icon&amp;quot; src=&amp;quot;https://i.imgur.com/HdsziHP.png&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;d-flex flex-column&amp;quot;&amp;gt; &amp;lt;p class=&amp;quot;font-weight-bold&amp;quot;&amp;gt;Order&amp;lt;br&amp;gt;Arrived&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;">
+        <input type="hidden" id="cs_cssEditor" name="cs_cssEditor" value="body{color: #000;overflow-x: hidden;height: 100%;background-color: #8C9EFF;background-repeat: no-repeat}.card{z-index: 0;background-color: #ECEFF1;padding-bottom: 20px;margin-top: 90px;margin-bottom: 90px;border-radius: 10px}.top{padding-top: 40px;padding-left: 13% !important;padding-right: 13% !important}#progressbar{margin-bottom: 30px;overflow: hidden;color: #455A64;padding-left: 0px;margin-top: 30px}#progressbar li{list-style-type: none;font-size: 13px;width: 25%;float: left;position: relative;font-weight: 400}#progressbar .step0:before{font-family: FontAwesome;content: &amp;amp;amp;quot;\f10c&amp;amp;amp;quot;;color: #fff}#progressbar li:before{width: 40px;height: 40px;line-height: 45px;display: block;font-size: 20px;background: #C5CAE9;border-radius: 50%;margin: auto;padding: 0px}#progressbar li:after{content: &#039;&#039;;width: 100%;height: 12px;background: #C5CAE9;position: absolute;left: 0;top: 16px;z-index: -1}#progressbar li:last-child:after{border-top-right-radius: 10px;border-bottom-right-radius: 10px;position: absolute;left: -50%}#progressbar li:nth-child(2):after, #progressbar li:nth-child(3):after{left: -50%}#progressbar li:first-child:after{border-top-left-radius: 10px;border-bottom-left-radius: 10px;position: absolute;left: 50%}#progressbar li:last-child:after{border-top-right-radius: 10px;border-bottom-right-radius: 10px}#progressbar li:first-child:after{border-top-left-radius: 10px;border-bottom-left-radius: 10px}#progressbar li.active:before, #progressbar li.active:after{background: #651FFF}#progressbar li.active:before{font-family: FontAwesome;content: &amp;amp;amp;quot;\f00c&amp;amp;amp;quot}.icon{width: 60px;height: 60px;margin-right: 15px}.icon-content{padding-bottom: 20px}@media screen and (max-width: 992px){.icon-content{width: 50%}}">
+        <input type="hidden" id="cs_jsEditor" name="cs_jsEditor" value="">
+        <input type="hidden" id="tempbootstrapversion" value="4.3.1">
+        <input type="hidden" id="tempbootstrapcsslink" value="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <input type="hidden" id="tempbootstrapjslink" value="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+        <input type="hidden" id="tempbootstrapjslink_1" value="">
+        <input type="hidden" id="tempbootstrapjslink_2" value="">
+        <input type="hidden" id="tempoptionjsrequired" value="1">
+        <input type="hidden" id="tempoptionis_react" value="0">
+        
+        <input type="hidden" id="tempjsversion" value="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        <input type="hidden" id="tempfonts" value="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <input type="hidden" id="snippet_image" name="snippet_image" value="">
+        <input type="hidden" id="snippet_tags" name="snippet_tags[]" value="">  
+        <input type="hidden" id="tempoptionautocomplete" value="">
+        <input type="hidden" id="tempversionname" value="Bootstrap 4"> 
+        
+        <input type="hidden" id="bootstrap_version_id" name="bootstrap_version_id" value="5"/>
+        <input type="hidden" id="jquery_version_id" name="jquery_version_id" value="1"/>
+        <input type="hidden" id="snippet_fonts_id" name="snippet_fonts_id" value="6"/>
+
+        <input type="hidden" id="snippet_name" name="snippet_name" value="">
+        <input type="hidden" id="last_saved" value="2022-01-18 15:24:44">
+
+        
+                         
+        </div>
+	        
+	       </div>
+	    </div>
+
+	  </div>
+	  <div id="iframecontainer">
+	    <div id="iframe">
+	      <div id="iframewrapper">
+
+	      	<div id="preview-container">
+
+
+          </div>                  
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	</div>
 </div>
+      </form>
+
+<script src="https://bbbootstrap.com/assets/js/jquery.min_kxa4mk.js" type="6b143584a92f4207eda162d0-text/javascript"></script> 
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" type="6b143584a92f4207eda162d0-text/javascript"></script>
+<script src="https://rawgithub.com/ajaxorg/ace-builds/master/src/ace.js" type="6b143584a92f4207eda162d0-text/javascript"></script>
+<script src="https://rawgithub.com/ajaxorg/ace-builds/master/src/ext-language_tools.js" type="6b143584a92f4207eda162d0-text/javascript"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.3/theme-twilight.js" type="6b143584a92f4207eda162d0-text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ext-beautify.js" type="6b143584a92f4207eda162d0-text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.9.1/beautify.js" type="6b143584a92f4207eda162d0-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.9.1/beautify-css.js" type="6b143584a92f4207eda162d0-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.9.1/beautify-html.js" type="6b143584a92f4207eda162d0-text/javascript"></script>
+<script src="https://momentjs.com/downloads/moment.min.js" type="6b143584a92f4207eda162d0-text/javascript"></script>
+
+<script type="6b143584a92f4207eda162d0-text/javascript">
+  function valueChanged()
+    {
+        if($('#featured-switch').is(":checked"))   {
+           
+           $("#featured-switch").val(1);
+         } else {
+         
+           $("#featured-switch").val(0);
+    }
+
+    }
+</script>
+
+<script type="6b143584a92f4207eda162d0-text/javascript">
+
+    $(document).ready(function() {
+        $("select#bootstrap_version").change(function() {
+            var selectedCountry = $(this).children("option:selected").val();
+            var optionboostrap = $('option:selected', this).attr('mytag');
+            var optionboostrapcss = $('option:selected', this).attr('mycss');
+            var optionboostrapjs = $('option:selected', this).attr('myjs');
+            var optionboostrapjs_1 = $('option:selected', this).attr('myjs_1');
+            var optionboostrapjs_2 = $('option:selected', this).attr('myjs_2');
+            var optionis_react = $('option:selected', this).attr('is_react');
+            var optionjsrequired = $('option:selected', this).attr('js_required');
+            var optionautocomplete = $('option:selected', this).attr('autocomplete_url');
+            var optionversionname =  $('option:selected', this).attr('version_name');
+            
+            $('#bootstrap_version_id').val(selectedCountry);
+            $('#tempbootstrapcsslink').val(optionboostrapcss);
+            $('#tempbootstrapjslink').val(optionboostrapjs);
+            $('#tempbootstrapjslink_1').val(optionboostrapjs_1);
+            $('#tempbootstrapjslink_2').val(optionboostrapjs_2);
+            
+            $('#tempbootstrapversion').val(optionboostrap);
+            $('#tempoptionjsrequired').val(optionjsrequired);
+            $('#tempoptionautocomplete').val(optionautocomplete);
+            $('#tempversionname').val(optionversionname);
+            $('#tempoptionis_react').val(optionis_react);
+            var is_react = document.querySelector(".babeljs");
+            if (optionis_react==1) {
+              is_react.classList.remove("d-none");
+            } else {
+              is_react.classList.add("d-none");
+            }
+
+            bsversion = $('#tempbootstrapversion').val();
+
+           // if(parseInt(bsversion) < parseInt("5.0.0")){
+               if(optionjsrequired==1){
+
+                $("#jquery-container").removeClass("display-none");
+                //$(this).removeClass("spot");
+                $('#tempjsversion').val("3.2.1");
+
+            }else{
+
+                $("#jquery-container").addClass("display-none");
+                $("#tag-container").removeClass("col-md-4");
+                $("#tag-container").addClass("col-md-6");
+                $('#tempjsversion').val("");
+                
+            }
+
+            loadsnippet();
+            savesnippet();
+        });
+
+        $("select#js_version").change(function() {
+            var selectedCountry = $(this).children("option:selected").val();
+            var optionjs = $('option:selected', this).attr('mytag');
+            var js_link = $('option:selected', this).attr('myjslink');
+            
+            $('#tempjsversion').val(js_link);
+            $('#jquery_version_id').val(selectedCountry);
+            loadsnippet();
+            savesnippet();
+        });
+
+        $("select#snippet_fonts").change(function() {
+          var selectedCountry = $(this).children("option:selected").val();
+            var optionfonts = $('option:selected', this).attr('mytag');
+            $('#tempfonts').val(optionfonts);
+            $('#snippet_fonts_id').val(selectedCountry);
+            loadsnippet();
+            savesnippet();
+        });
+
+    });
+    var fontsize = $("#sizeinput").val();
+    var bsversion,jsversion,snippetfonts;
+    htmlString = $('#htmleditorvalue').val();
+    cssString = $('#csseditorvalue').val();
+    jsString = $('#jseditorvalue').val();
+    
+    html_code = html_beautify(htmlString);
+
+    
+    css_code = css_beautify(cssString);
+    js_code = html_beautify(jsString);
+   // var langTools = ace.require("ace/ext/language_tools");
+    var html = ace.edit("htmlEditor");
+    var css = ace.edit("cssEditor");
+    var js = ace.edit("jsEditor");
+     
+    function setEditorOptions(snippets, editor, type) {
+
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/" + type);
+    editor.session.setValue(snippets);
+    };
+
+    setEditorOptions(html_code, html, 'html');
+    setEditorOptions(css_code, css, 'css');
+    setEditorOptions(js_code, js, 'jsx');
+
+    // html.setTheme("ace/theme/monokai");
+    // css.setTheme("ace/theme/monokai");
+    // js.setTheme("ace/theme/monokai");
+
+    html.setOptions({
+      fontSize: fontsize+'px',
+      enableBasicAutocompletion: true,
+      enableSnippets: true,
+      enableLiveAutocompletion: true,
+    });
+
+    css.setOptions({
+     
+      fontSize: fontsize+'px',
+      enableBasicAutocompletion: true,
+      enableSnippets: true,
+      enableLiveAutocompletion: true,
+    });
+
+    js.setOptions({
+      
+      fontSize: fontsize+'px',
+    });
+ 
+    loadsnippet();
+
+    /*Testing start*/
+     
+    function updateTextInput(val) {
+          $(".sizenumber").html(val);
+          $("#sizeinput").val(val);
+          update_html();
+          update_css();
+          update_js();
+
+          }
+
+    /*Testing End*/
+
+    function readFile(file)
+    {   
+        var res;
+        var f = new XMLHttpRequest();
+        f.open("GET", file, false);
+        f.onreadystatechange = function ()
+        {
+            if(f.readyState === 4)
+            {
+                if(f.status === 200 || f.status == 0)
+                {
+                    res= f.responseText;
+                  
+                }
+            }
+        }
+        f.send(null);
+        return res;
+    }
+
+
+    html.session.setMode("ace/mode/html");
+    css.session.setMode("ace/mode/css");
+    js.session.setMode("ace/mode/jsx");
+
+    // get html
+    
+    html.getSession().on('change', function() {
+        update_html();
+    });
+
+    function update_html() {
+      var fontsizenew = $("#sizeinput").val();
+      html.setOptions({fontSize:fontsizenew+"px"});
+        var val = html.getSession().getValue();
+        $("#cs_htmlEditor").val(val);
+        savesnippet();
+        var auto_url = $('#tempoptionautocomplete').val();
+        if (auto_url !='') {
+          var bootstrap_version = $('#tempversionname').val();
+    var libraries = readFile(auto_url);
+    var externallibraries = libraries.split(',\n');
+    var staticWordCompleter = {
+        getCompletions: function(editor, session, pos, prefix, callback) {
+          var wordList = externallibraries;
+          callback(null, wordList.map(function(word) {
+            return {
+              caption: word,
+              value: word,  
+              meta: bootstrap_version
+            };
+          }));
+
+        }
+      }
+  html.completers = [staticWordCompleter];
+          
+        }
+
+    }
+
+    //get css
+
+    css.getSession().on('change', function() {
+        update_css()
+    });
+
+    function update_css() {
+      var fontsizenew = $("#sizeinput").val();
+      css.setOptions({fontSize:fontsizenew+"px"});
+        var val = css.getSession().getValue();
+        $("#cs_cssEditor").val(val);
+        savesnippet();
+       
+    var libraries = readFile('https://raw.githubusercontent.com/asksnbb/bootstraplibraries/main/css.txt');
+    var externallibraries = libraries.split(',\n');
+    var staticWordCompleter = {
+        getCompletions: function(editor, session, pos, prefix, callback) {
+          var wordList = externallibraries;
+          callback(null, wordList.map(function(word) {
+            return {
+              caption: word,
+              value: word,  
+              meta: "- CSS"
+            };
+          }));
+
+        }
+      }
+  // langTools.setCompleters([staticWordCompleter]);
+  css.completers = [staticWordCompleter];
+    }
+
+    // get javascript
+
+    js.getSession().on('change', function() {
+        update_js()
+    });
+
+    function update_js() {
+      var fontsizenew = $("#sizeinput").val();
+      js.setOptions({fontSize:fontsizenew+"px"});
+        var val = js.getSession().getValue();
+        $("#cs_jsEditor").val(val);
+        savesnippet();
+    }
+
+
+    var delay = (function() {
+        var timer = 0;
+        return function(callback, ms) {
+            clearTimeout(timer);
+            timer = setTimeout(callback, ms);
+        };
+    })();
+
+    $('.ace_text-input').keyup(function(e) {
+        bsversion = $('#tempbootstrapversion').val();
+
+        bscsslink = $('#tempbootstrapcsslink').val();
+        bsjslink = $('#tempbootstrapjslink').val();
+        bsjslink_1 = $('#tempbootstrapjslink_1').val();
+       // alert(bscsslink);
+        jsversion = $('#tempjsversion').val();
+        snippetfonts = $('#tempfonts').val();
+        isjsrequired = $('#tempoptionjsrequired').val();
+        is_react = $('#tempoptionis_react').val();
+        
+        
+        delay(function() {
+            var html1 = buildSource(html, js, css);
+            var iframe = document.createElement('iframe');  
+            iframe.frameBorder = "0";
+            iframe.setAttribute("Style", "width :100%;height:calc(100vh - 85px);");
+            iframe.className = 'preview-iframe';
+            $('.preview-iframe').remove();
+            $('div#preview-container').append(iframe);
+
+            iframe.contentWindow.document.open('text/html', 'replace');
+            iframe.contentWindow.document.write(html1); 
+            iframe.contentWindow.document.close();
+        }, 1000);
+    });
+
+    function buildSource(htmleditor, jseditor, csseditor) {
+        var code = {};
+        code.html = htmleditor.getValue();
+        code.css = csseditor.getValue();
+        code.js = jseditor.getValue();
+        code.snippetfonts = snippetfonts;
+          code.bootstrapcss = bscsslink;
+          code.bootstrapjs = bsjslink;
+          code.bootstrapjs_1 = bsjslink_1;
+          code.bootstrapjs_2 = bsjslink_2;
+
+            if(isjsrequired ==1){
+
+            code.jqueryurl =  jsversion;
+
+            } 
+
+            if(is_react==1){
+                   code.jstype = 'babel';
+            }else{    
+                   code.jstype = 'Javascript';
+            }
+
+            var template = "<!doctype html>\n\
+                        <html>\n\
+                            <head>\n\
+                                <meta charset='utf-8'>\n\
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>\n\
+                                <title>Snippet - BBBootstrap</title>\n\
+                                <link href='|bootstrapcss|' rel='stylesheet'>\n\
+                                <link href='|snippetfonts|' rel='stylesheet'>\n\
+                                <style>|css|\x3C/style>\n\
+                               </head>\n\
+                               <body>\n\
+                               |html|\n\
+                               \x3Cscript type='text/javascript' src='|jqueryurl|'>\x3C/script>\n\
+                               \x3Cscript type='text/javascript' src='|bootstrapjs|'>\x3C/script>\n\
+                               \x3Cscript type='text/javascript' src='|bootstrapjs_1|'>\x3C/script>\n\
+                               \x3Cscript type='text/javascript' src='|bootstrapjs_2|'>\x3C/script>\n\
+                               \x3Cscript type='text/|jstype|'>|js|\x3C/script>\n\
+                               </body>\n\
+                               </html>";                      
+
+        content = template.replace(/\|(\w+)\|/g, function(match, str) {
+            if (str in code) return code[str];
+            return '';
+        });
+
+        return content;
+    }
+
+
+                        function loadsnippet(){
+
+                            bsversion = $('#tempbootstrapversion').val();
+                            jsversion = $('#tempjsversion').val();
+                            snippetfonts = $('#tempfonts').val();
+                            isjsrequired = $('#tempoptionjsrequired').val();
+                            is_react = $('#tempoptionis_react').val();
+                            bscsslink = $('#tempbootstrapcsslink').val();
+                            bsjslink = $('#tempbootstrapjslink').val();
+                            bsjslink_1 = $('#tempbootstrapjslink_1').val();
+                            bsjslink_2 = $('#tempbootstrapjslink_2').val();
+
+                        var html1 = buildSource(html, js, css);
+
+                        $(function() {
+                        var iframe = document.createElement('iframe');
+
+                        
+                        iframe.frameBorder = "0";
+                        iframe.setAttribute("Style", "width :100%;height:calc(100vh - 85px);");
+                        
+
+                        iframe.className = 'preview-iframe';
+
+                        $('.preview-iframe').remove();
+                        $('div#preview-container').append(iframe);
+
+                        iframe.contentWindow.document.open('text/html', 'replace');
+                        iframe.contentWindow.document.write(html1);
+                        iframe.contentWindow.document.close();
+                        });
+                        }
+
+                        
+                                  function savesnippet(){
+
+                                    var saved_time = $("#last_saved").val();
+                                    var a = moment();
+                                    
+                                    var b = moment(saved_time);
+                                   var sim = a.diff(b); // 86400000
+                                   var seconds = ((sim % 60000) / 1000).toFixed(0);
+                                    if(seconds > 30){
+                                    callsnippet();
+                                    }
+                                   
+                                    }
+
+
+                                    function callsnippet(){
+
+
+                                      $.ajaxSetup({
+                                          headers: {
+                                          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                                          }
+                                      });
+                                      $.ajax({
+                                              url: '/forksnippet/saveforksnippets',
+                                              type: 'POST',
+                                              data:
+                                                $("#form_snippets_form").serialize()
+                                              ,
+                                              beforeSend: function(result){
+                                                
+                                          $("#saveonlinesnippet").attr("disabled", true);
+                                          $("#saveonlinesnippet").html('Auto saving...');
+                                          },
+                                              success: function(result) {
+                                                  $("#last_saved").val(result);
+                                                  $("#saveonlinesnippet").html('Auto saved');
+                                                
+                                              }
+                                          });
+
+                                    }
+</script>
+
+<script type="6b143584a92f4207eda162d0-text/javascript">
+  $(document).ready(function() {
+$('.select-items').niceSelect();
+});
+
+
+$("#name_snippet").keyup(function(e) {
+   
+  //  alert(this.value);
+
+    $("#snippet_name").val(this.value);
+
+});
+</script> 
+
+<script type="6b143584a92f4207eda162d0-text/javascript">
+  window.onbeforeunload = function (e) {
+      e = e || window.event;
+  
+      // For IE and Firefox prior to version 4
+      if (e) {
+          e.returnValue = 'Sure?';
+      }
+  
+      // For Safari
+      return 'Sure?';
+  };
+  </script>
+
+<script type="6b143584a92f4207eda162d0-text/javascript">
+  $(document).ready(function(){
+
+     var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+     removeItemButton: true,
+     maxItemCount:5,
+     searchResultLimit:5,
+     renderChoiceLimit:5
+     });
+
+     $("#choices-multiple-remove-button").change(function() {
+                var snippettags = [];
+    $.each($("#choices-multiple-remove-button option:selected"), function(){           
+        snippettags.push($(this).val());
+
+
+    });
+
+    $('#snippet_tags').val(JSON.stringify(snippettags));
+
+    });
+
+
+     });
+
+
+
+</script>
+
+<script type="6b143584a92f4207eda162d0-text/javascript">
+  $(document).ready(function(){
+
+ var js = 1;
+ if(js){
+   $("#jquery-container").removeClass('display-none');
+ }   
+
+/*Bootstrap*/
+$("#bootstrap-container .nice-select span").text("Bootstrap 4 - 4.3.1");
+$('#bootstrap-container .nice-select .list').find('li').removeClass('selected focus');
+$('#bootstrap-container .nice-select ul').find('li[data-value=5]').addClass('selected focus');
+
+/*Jquery*/
+$("#jquery-container .nice-select span").text("jQuery 3.2.1");
+$('#jquery-container .nice-select .list').find('li').removeClass('selected focus');
+$('#jquery-container .nice-select ul').find('li[data-value=1]').addClass('selected focus');
+
+
+$("#font-container .nice-select span").text("Font Awesome - 4.7.0");
+$('#font-container .nice-select .list').find('li').removeClass('selected focus');
+$('#font-container .nice-select ul').find('li[data-value=6]').addClass('selected focus');
+
+
+/*Fonts*/
+// 
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" type="6b143584a92f4207eda162d0-text/javascript"></script>
+<script src="https://bbbootstrap.com/assets/js/onlineeditorscripts.js?v=20.5" type="6b143584a92f4207eda162d0-text/javascript"></script>
+
+<script type="6b143584a92f4207eda162d0-text/javascript">
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    
+    document.onkeydown = function (e) {
+    if (event.keyCode == 123) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+        return false;
+    }
+ }                                                 
+</script>
+
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="6b143584a92f4207eda162d0-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6cf8d4f910b90e98","version":"2021.12.0","r":1,"token":"0abe9be495a1426c8d4049c15529447a","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
