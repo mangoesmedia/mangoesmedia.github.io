@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mangoes Media Bill </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="billpage.css">
+  </head>
+  <body>
+    <div class="testbox">
+      <form action="pay.html" method="POST">
+        <div class="banner">
+          <h1>Add Bill Details</h1>
+        </div>
+        <div class="item">
+          <p>Name</p>
+          <div class="name-item">
+            <input type="text" id="name" name="name" placeholder="First" />
+          </div>
+            
+        </div>
+        <div class="contact-item">
+          <div class="item">
+            <p>Email</p>
+            <input type="text" id="mail" name="name"/>
+          </div>
+          <div class="item">
+            <p>Phone</p>
+            <input type="text" id="surname" name="name"/>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="item">
+            <p>Iteam 1</p>
+            <input type="text" id="i1" name="name"/>
+            <input type="text" id="q1" name="quan" placeholder="  Quantity" />
+          </div>
+          <div class="item">
+            <p>Iteam 2</p>
+            <input type="text" id="i2" name="name"/>
+            <input type="text" id="q2" name="quan" placeholder="  Quantity" />
+          </div>
+          <div class="item">
+            <p>Iteam 3</p>
+            <input type="text" id="i3" name="name"/>
+            <input type="text" id="q3" name="quan" placeholder="  Quantity" />
+          </div>
+          <div class="item">
+            <p>tax</p>
+            <input type="text" id="tax" name="name"/>
+          </div>
+          <div class="item">
+            <p>Discout</p>
+            <input type="text" id="disc" name="name"/>
+          </div>
+        </div>
+        <div class="item">
+          <p>Total</p>
+          <input type="text" id="pay" name="name"/>
+        </div>
+        <div class="btn-block">
+          <button type="submit" onclick="handleSubmit()">APPLY</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script type="text/javascript" src="storage.js"></script>
+</html>

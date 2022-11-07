@@ -1,0 +1,130 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Mangoes Media Invoice</title>
+        <link rel="stylesheet" href="pay.css">
+        <script type="text/javascript" src="result.js" ></script>
+
+	</head>
+
+	<body>
+		<div class="invoice-box">
+			<table cellpadding="0" cellspacing="2">
+				<tr class="top">
+					<td colspan="8">
+						<table>
+							<tr>
+								<td class="title">
+									<img src="https://uploads-ssl.webflow.com/6155e11b14606e532394f7a5/6155e160df11e31b15242d26_20210519_212504-p-500.png" style="width: 20%; max-width: 100px" />
+								</td>
+
+								<td>
+									<p>Invoice No:#<span id="in1" /></p>
+									<span id="date-time" /></div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr class="information">
+					<td colspan="10">
+						<table>
+							<tr>
+								<td>
+									Mangoes Media<br />
+									Karthikapuram <br />
+									Kannur,Kerala 670571<br />
+									Ph : 6366012406 <br />
+									Mail : info.mangoesmedia@gmail.com
+								</td>
+							    
+								<td>
+								<div>
+                                        <span id="result-name" /></div>
+                                        <div>
+                                           <span id="result-surname" /></div>
+                                          <div> <span id="result-mail" /></div>
+                                        
+                                    
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr class="heading">
+					<td>Item</td>
+					<td>Price</td>
+					<td>Quanty</td>
+					<td></td>
+					
+					<td>Total Price</td>
+				</tr>
+
+				<tr class="item">
+					<td>Poster design</td>
+					<td><span id="result-i1" />&nbsp;</td>
+					<td><p>X &nbsp;&nbsp;<span id="result-q1" /></p></td>
+					<td></td>
+
+					<td><p>₹ &nbsp;<span id="result-iq1" />0</p></td>
+				</tr>
+
+				<tr class="item">
+					<td>Title design</td>
+					<td><span id="result-i2" />&nbsp;</td>
+					<td><p>X &nbsp;&nbsp;<span id="result-q2" /></p></td>
+					<td></td>
+
+					<td><p>₹ &nbsp;<span id="result-iq2" /></p></td>
+				</tr>
+
+				<tr class="item">
+					<td>logo Desing</td>
+					<td><span id="result-i3" /></td>
+                    <td><p>X &nbsp;<span id="result-q3" /></p></td>
+					<td></td>
+					<td><p>₹ &nbsp;<span id="result-iq3" /></p></td>
+				</tr>
+
+				<tr class="item">
+					<td>Tax</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><p>₹ &nbsp;<span id="result-tax" /></p></td>
+				</tr>
+
+				<tr class="item last">
+					<td>Discout</td>
+					<td></td>
+                    <td>-</td>
+					<td></td>
+					<td><p>₹ &nbsp;<span id="result-disc" /></p></td>
+				</tr>
+
+
+				<tr class="total">
+					<td><h3>NET TOTAL</h3></td>
+                    <td></td>
+					<td></td>
+					<td></td>
+					<td>
+						<h3><p>₹ &nbsp;<span id="result-pay" />
+						</p></h3></td>
+				</tr>
+				<tr class="btn-block2">
+					<td><button class="button2" onclick="printFunction()">Print</button></td>
+					<td>
+					<button type="submit" class="button" onclick="payNow()">PAY NOW</button>
+				</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<script>
+		let x = Math.floor((Math.random() * 100000) + 10000);
+		document.getElementById("in1").innerHTML = x;
+	</script>
+</html>
