@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="frstyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+       <div id="head"> <h1>ATmega 2022</h1>
+        <h4><I>7 days virtual camp </I></h4>
+    </div>
+    <img src="logomecs.png" alt="mecs logo" class="i1">
+    <img src="https://uploads-ssl.webflow.com/6155e11b14606e532394f7a5/6155e160df11e31b15242d26_20210519_212504-p-500.png" alt="mecs logo" class="i2">
+        <div class="shape"></div>
+    </div>
+    <form id="submit-form" action="">
+        <h3>Register Here</h3>
+
+        <label for="username">Name</label>
+        <input type="text" placeholder="Full Name" id="username" name="name" required>
+
+        <label for="text">Mail Id</label>
+        <input type="text" placeholder="Your Mail" id="mail" name="Mail" required>
+
+        <label for="number">Phone Number</label>
+        <input type="text" placeholder="Your Mobile Number" id="phone" name="PhNo" required>
+
+        <label for="text">Class</label>
+        <input type="text" placeholder="Curent Studying Year" id="year" name="class" required>
+
+        <button class="button">Submit</button>
+
+    </form>
+    
+    <script src="webc.js" defer></script>
+    <div class="elfsight-app-9442d261-2a07-4d0c-a358-20220e705084"></div>
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwbejK1TgKznfLTeSDMq7K3kPByPVzIfljEuCrA4d5_VbPNMNr951LcikS2khoJbA3v/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    
+                    window.location.href="/sucess.html"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+    <div id="bottom"><I>© 2022, mangoes media, Inc. All Rights Reserved</I></div>
+    
+</body>
+</html>
