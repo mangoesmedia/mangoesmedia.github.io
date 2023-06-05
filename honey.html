@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Honey Order Form</title>
+
+  <link rel="stylesheet" type="text/css" href="hstyle.css">
+
+</head>
+
+<body>
+
+  <h1>Honey Order Form</h1>
+
+  <form id="orderForm" onsubmit="submitForm(event)">
+
+    <label for="name">Name:</label>
+
+    <input type="text" id="name" required>
+
+    <label for="phone">Phone Number:</label>
+
+    <input type="tel" id="phone" required>
+
+    <label for="address">Address:</label>
+
+    <textarea id="address" required></textarea>
+
+    <label for="quantity">Quantity:</label>
+
+    <input type="number" id="quantity" min="1" required>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+  <script src="hscript.js"></script>
+
+</body>
+
+</html>
+
