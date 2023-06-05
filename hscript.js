@@ -50,7 +50,7 @@ function sendOrder(order) {
 
     if (xhr.readyState === 4 && xhr.status === 200) {
 
-      console.log('Order submitted successfully.');
+      alert('Order submitted successfully.');
 
       // You can perform additional actions here, such as showing a success message
 
