@@ -54,9 +54,9 @@
     <p>Current LED state: <span id="ledState">Loading...</span></p>
   </div>
 
-<script>
+  <script>
     function sendCommand(command) {
-      fetch("http://192.168.1.50/" + command, {  // Replace <esp8266-ip> with your ESP8266's IP address
+      fetch("http://<esp8266-ip>/" + command, {  // Replace <esp8266-ip> with your ESP8266's IP address
         method: "POST"
       })
       .then(response => response.text())
@@ -69,7 +69,7 @@
     }
 
     function fetchState() {
-      fetch("http://192.168.1.50/state", {  // Replace <esp8266-ip> with your ESP8266's IP address
+      fetch("http://192.168.1.50/", {  // Replace <esp8266-ip> with your ESP8266's IP address
         method: "GET"
       })
       .then(response => response.text())
@@ -82,6 +82,6 @@
     }
 
     setInterval(fetchState, 1000); // Update LED state every 1 second
-</script>
+  </script>
 </body>
 </html>
