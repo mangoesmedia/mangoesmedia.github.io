@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ESP8266 LED Control</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      margin: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ESP8266 LED Control</h1>
+  </header>
+
+  <div class="container">
+    <p>Click the buttons below to control the LED:</p>
+    <button class="button" onclick="sendCommand('on')">Turn On</button>
+    <button class="button" onclick="sendCommand('off')">Turn Off</button>
+    <p>Current LED state: <span id="ledState">Loading...</span></p>
+  </div>
+
+  <script>
+    function sendCommand(command) {
+      fetch("http://192.168.1.50/" + command, {  // Replace <esp8266-ip> with your ESP8266's IP address
+        method: "POST"
+      })
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("ledState").textContent = data;
+      })
+      .catch(error => {
+        console.error("Error sending command:", error);
+      });
+    }
+
+    function fetchState() {
+      fetch("http://192.168.1.50/state", {  // Replace <esp8266-ip> with your ESP8266's IP address
+        method: "GET"
+      })
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("ledState").textContent = data;
+      })
+      .catch(error => {
+        console.error("Error fetching LED state:", error);
+      });
+    }
+
+    setInterval(fetchState, 1000); // Update LED state every 1 second
+  </script>
+</body>
+</html>
