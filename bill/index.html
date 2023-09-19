@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bill Receipt Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+</head>
+<body>
+    <h1>Bill Receipt Generator</h1>
+    <div id="receipt-form">
+        <div class="product-input">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" class="product-name">
+            <label for="total-money">Total Money:</label>
+            <input type="number" id="total-money" class="total-money">
+            <label for="num-members">No. Members:</label>
+            <input type="number" id="num-members" class="num-members">
+        </div>
+        <button id="add-product">Add Product</button>
+        <button id="generate-receipt">Generate Receipt</button>
+        <!-- Add this below the form in your HTML -->
+        <ul id="product-list"></ul>
+
+    </div>
+    <div id="receipt-output"></div>
+    <script src="script.js"></script>
+</body>
+</html>
