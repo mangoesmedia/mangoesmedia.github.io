@@ -122,7 +122,7 @@ document.body.removeChild(downloadLink);
         // Create a WhatsApp sharing link with the image and a predefined message
         const whatsappMessage = encodeURIComponent(`Your bill receipt is ready for ₹${grandTotal.toFixed(2)}. Pay using this link: [paymentlink]`);
         console.log(imageDataURL)
-        const whatsappLink = `whatsapp://send?text=${encodedDataURL}`;
+        const whatsappLink = `whatsapp://send?image=${encodedDataURL}`;
 
         // Open WhatsApp with the image and message
         window.location.href = whatsappLink;
