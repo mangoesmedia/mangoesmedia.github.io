@@ -120,6 +120,10 @@ html2canvas(receiptContainer).then(function (canvas) {
 
     // Remove the link from the document
     document.body.removeChild(downloadLink);
+    const whatsappMessage = `Your bill receipt is ready for ₹${grandTotal.toFixed(2)}. Pay using this link: [paymentlink]`;
+    const whatsappLink = `whatsapp://send?text=${whatsappMessage}&data=${imageDataURL}`;
+    // Open WhatsApp with the image and message
+    window.location.href = whatsappLink;
 });
 
 }
