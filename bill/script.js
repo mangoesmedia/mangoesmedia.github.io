@@ -108,16 +108,16 @@ function generateReceipt() {
         const imageDataURL = canvas.toDataURL('image/png');
         const encodedDataURL = encodeURIComponent(imageDataURL);
         const downloadLink = document.createElement("a");
-downloadLink.href = encodedDataURL;
-downloadLink.download = "image.png"; // Set the desired file name
+    downloadLink.href = imageDataURL;
+    downloadLink.download = "receipt.png"; // Set the desired file name
+    downloadLink.style.display = "none"; // Hide the link
 
-// Trigger an automatic click event on the link to initiate the download
-downloadLink.style.display = "none"; // Hide the link
-document.body.appendChild(downloadLink); // Append link to the document
-downloadLink.click(); // Trigger the click event
+    // Add the link to the document and trigger a click event to initiate the download
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
 
-// Remove the link from the document
-document.body.removeChild(downloadLink);
+    // Remove the link from the document
+    document.body.removeChild(downloadLink);
 
         // Create a WhatsApp sharing link with the image and a predefined message
         const whatsappMessage = encodeURIComponent(`Your bill receipt is ready for ₹${grandTotal.toFixed(2)}. Pay using this link: [paymentlink]`);
