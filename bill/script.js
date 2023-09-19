@@ -115,7 +115,7 @@ html2canvas(receiptContainer).then(function (canvas) {
     downloadLink.style.display = "none"; // Hide the link
 
     // Add the link to the document and trigger a click event to initiate the download
-    document.body.appendChild(downloadLink);
+    // document.body.appendChild(downloadLink);
     // downloadLink.click();
 
     // Remove the link from the document
