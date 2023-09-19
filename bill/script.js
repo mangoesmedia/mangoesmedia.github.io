@@ -106,10 +106,11 @@ function generateReceipt() {
     html2canvas(receiptContainer).then(function (canvas) {
         // Create a data URL for the image
         const imageDataURL = canvas.toDataURL('image/png');
-
+        const encodedDataURL = encodeURIComponent(imageDataURL);
         // Create a WhatsApp sharing link with the image and a predefined message
-        const whatsappMessage = `Your bill receipt is ready for ₹${grandTotal.toFixed(2)}. Pay using this link: [paymentlink]`;
-        const whatsappLink = `whatsapp://send?text=${whatsappMessage}&data=${imageDataURL}`;
+        const whatsappMessage = encodeURIComponent(`Your bill receipt is ready for ₹${grandTotal.toFixed(2)}. Pay using this link: [paymentlink]`);
+        console.log(imageDataURL)
+        const whatsappLink = `whatsapp://send?text=${whatsappMessage}&image=${encodedDataURL}`;
 
         // Open WhatsApp with the image and message
         window.location.href = whatsappLink;
