@@ -103,11 +103,13 @@ function generateReceipt() {
     const receiptContainer = document.querySelector('.invoice-card');
 
     // Use html2canvas library to convert the receipt container to an image
-    html2canvas(receiptContainer).then(function (canvas) {
-        // Create a data URL for the image
-        const imageDataURL = canvas.toDataURL('image/png');
-        const encodedDataURL = encodeURIComponent(imageDataURL);
-        const downloadLink = document.createElement("a");
+ // Capture the receipt container as an image using html2canvas
+html2canvas(receiptContainer).then(function (canvas) {
+    // Create a data URL for the image
+    const imageDataURL = canvas.toDataURL('image/png');
+
+    // Create a temporary anchor element for downloading the image
+    const downloadLink = document.createElement("a");
     downloadLink.href = imageDataURL;
     downloadLink.download = "receipt.png"; // Set the desired file name
     downloadLink.style.display = "none"; // Hide the link
@@ -118,13 +120,6 @@ function generateReceipt() {
 
     // Remove the link from the document
     document.body.removeChild(downloadLink);
+});
 
-        // Create a WhatsApp sharing link with the image and a predefined message
-        const whatsappMessage = encodeURIComponent(`Your bill receipt is ready for ₹${grandTotal.toFixed(2)}. Pay using this link: [paymentlink]`);
-        console.log(imageDataURL)
-        const whatsappLink = 'whatsapp://send?text='+encodeURIComponent(imageDataURL);
-
-        // Open WhatsApp with the image and message
-        window.location.href = whatsappLink;
-    });
 }
