@@ -115,11 +115,11 @@ html2canvas(receiptContainer).then(function (canvas) {
     downloadLink.style.display = "none"; // Hide the link
 
     // Add the link to the document and trigger a click event to initiate the download
-    // document.body.appendChild(downloadLink);
-    // downloadLink.click();
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
 
     // Remove the link from the document
-    // document.body.removeChild(downloadLink);
+    document.body.removeChild(downloadLink);
     const whatsappMessage = `Your bill receipt is ready for ₹${grandTotal.toFixed(2)}. Pay using this link: [paymentlink]`;
     const whatsappLink = `whatsapp://send?text=${whatsappMessage}&data=${imageDataURL}`;
     // Open WhatsApp with the image and message
