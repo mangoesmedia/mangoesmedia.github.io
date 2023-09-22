@@ -120,7 +120,7 @@ html2canvas(receiptContainer).then(function (canvas) {
 
     // Remove the link from the document
     document.body.removeChild(downloadLink);
-    const whatsappMessage = `Your bill receipt is ready for ₹${grandTotal.toFixed(2)}. Pay using this link: [paymentlink]`;
+    const whatsappMessage = `Your bill receipt is ready for ₹${grandTotal.toFixed(2)}. Pay using this link: https://pay.upilink.in/pay/9188462190@hdfcbank?am=${grandTotal.toFixed(2)}`;
     const whatsappLink = `whatsapp://send?text=${whatsappMessage}&data=${imageDataURL}`;
     // Open WhatsApp with the image and message
     window.location.href = whatsappLink;
